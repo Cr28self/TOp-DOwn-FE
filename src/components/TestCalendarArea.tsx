@@ -16,6 +16,7 @@ import {
   Draggable,
   DropResult,
 } from "react-beautiful-dnd";
+import { Button } from "./ui/button";
 
 /** 이벤트(계획) 데이터 구조 예시 */
 interface CalendarEvent {
@@ -172,17 +173,17 @@ export default function TestCalendarArea() {
     <div className="p-4">
       {/* 상단 헤더 (이전/다음 달, 연/월 표시) */}
       <div className="flex items-center justify-between mb-4">
-        <button
-          className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300"
+        <Button
+          className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 cursor-pointer"
           onClick={goPrevMonth}
         >
           이전 달
-        </button>
+        </Button>
         <h2 className="text-xl font-bold">
           {year}년 {month}월
         </h2>
         <button
-          className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300"
+          className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 cursor-pointer"
           onClick={goNextMonth}
         >
           다음 달
