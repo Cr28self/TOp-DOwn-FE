@@ -13,7 +13,7 @@ import {
   Draggable,
   DropResult,
 } from "react-beautiful-dnd";
-import { Button } from "./ui/button";
+import { Button } from "../../../components/ui/button";
 
 /** 이벤트(계획) 데이터 구조 예시 */
 interface CalendarEvent {

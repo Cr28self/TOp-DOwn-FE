@@ -1,5 +1,5 @@
-import CalendarArea from "@/components/Calendar-Area";
-import CalendarSidebar from "@/components/Calendar-Sidebar";
+import CalendarArea from "@/features/calendar/components/Calendar-Area";
+import CalendarSidebar from "@/features/calendar/components/Calendar-Sidebar";
 
 const CalendarRoute = () => {
   return (

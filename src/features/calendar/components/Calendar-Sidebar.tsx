@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
-import { Button } from "./ui/button";
+
 import { ChevronsLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const CalendarSidebar = () => {
   const calendarSidebarRef = useRef<HTMLElement | null>(null);
