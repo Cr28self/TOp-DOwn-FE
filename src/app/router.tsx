@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginRoute from "./routes/auth/login";
 import RegisterRoute from "./routes/auth/register";
 import LandingRoute from "./routes/landing";
-import CalendarRoute from "./routes/app/calendar";
+import CalendarRoute from "./routes/app/calendar/calendar";
 import AppLayout from "./routes/app/app-layout";
 
 const createAppRouter = () =>
