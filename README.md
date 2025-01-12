@@ -145,22 +145,41 @@ src
 각 feature 폴더 내부 디렉토리
 
 ```sh
-src/features/awesome-feature
+src/features/기능1
 |
-+-- api         # 해당 feature에서 사용하는 api 요청에 대한 정의를 내보내는 곳
++-- api         # 해당 기능1에서 사용하는 api 요청에 대한 정의를 내보내는 곳
 |
-+-- assets      # 해당 feature에서 사용하는 assets
++-- assets      # 해당 기능1에서 사용하는 assets
 |
-+-- components  # 해당 feature에서 사용하는 컴포넌트
++-- components  # 해당 기능1에서 사용하는 컴포넌트
 |
-+-- hooks       # 해당 feature에서 사용하는 커스텀훅
++-- hooks       # 해당 기능1에서 사용하는 커스텀훅
 |
-+-- stores      # 해당 feature에서 사용하는 store
++-- stores      # 해당 기능1에서 사용하는 store
 |
-+-- types       # 해당 feature에서 사용하는 타입 모음
++-- types       # 해당 기능1에서 사용하는 타입 모음
 |
-+-- utils       # 해당 feature에서 사용하는 util함수들
++-- utils       # 해당 기능1에서 사용하는 util함수들
 ```
+
+<br />
+
+# 라우팅 구조
+
+이 프로젝트의 라우팅 구조는 React Router를 사용하여 구성되었습니다. 주요 라우트와 서브 라우트는 다음과 같습니다:
+
+라우팅 관리는 [src/app/router.tsx](src/app/router.tsx)에서 관리합니다.
+
+- `/` ([랜딩 페이지](src/app/routes/landing.tsx))
+
+- `/auth` (사용자 인증 루트)
+
+  - `/auth/login` ([로그인 페이지](src/app/routes/auth/login.tsx))
+  - `/auth/register` ([회원가입 페이지](src/app/routes/auth/register.tsx))
+
+- `/app` (애플리케이션 루트) ( 사용자 인증 필요 )
+
+  - `/app/calendar` ([캘린더 페이지](src/app/routes/app/calendar.tsx))
 
 # 개발 기간
 
